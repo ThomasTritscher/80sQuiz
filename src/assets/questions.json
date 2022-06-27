@@ -1,0 +1,39 @@
+{"questions": [
+  {
+    "questionText": "Das ist eine Frage",
+    "options": [{
+      "text": "antowrt 1"
+    },
+    {
+      "text": "antowrt 2",
+      "correct": "true"
+    },
+    {
+      "text": "antowrt 3"
+    },
+    {
+      "text": "antowrt 4"
+    }
+  ],
+  "explanation": "Das ist die Antowrt warum"
+  },
+  {
+    "questionText": "Das ist eine Frage",
+    "options": [{
+      "text": "antowrt 1"
+    },
+    {
+      "text": "antowrt 2",
+      "correct": "true"
+    },
+    {
+      "text": "antowrt 3"
+    },
+    {
+      "text": "antowrt 4"
+    }
+  ],
+  "explanation": "Das ist die Antowrt warum"
+  }
+
+]}
