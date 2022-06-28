@@ -1,18 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { QuestionService } from '../service/question.service';
 
 @Component({
   selector: 'app-question',
   templateUrl: './question.component.html',
-  styleUrls: ['./question.component.scss']
+  styleUrls: ['./question.component.scss'],
 })
 export class QuestionComponent implements OnInit {
-
   public name: string = '';
 
-  constructor() { }
+  constructor(private questionService: QuestionService) {}
 
   ngOnInit(): void {
     this.name = localStorage.getItem('name')!;
+    this.getAllQuestions();
   }
 
+  public getAllQuestions() {
+    this.questionService.getQuestionsJson()
+    .subscribe(res =>{
+      console.log(res.questions)
+    })
+  }
 }
